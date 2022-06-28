@@ -1,0 +1,68 @@
+body{
+	background-image: url('banner.png');
+	color: white;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.hero, .model-container {
+	width: 30rem;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	color: black;
+	text-align: center;
+	border-radius: 10px;
+}
+.hero button{
+	padding: 0.7rem;
+	width: 8rem;
+	color: white;
+	background: lightblue;
+	border: 1px lightblue solid;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.model-overlay{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	display: flex;
+	top: 0px;
+	left: 0px;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0,0.5);
+	visibility: hidden;
+	z-index: -10;
+}
+.show-model{
+	visibility: visible;
+	z-index: 10;
+	transition: all .5s ease;
+}
+.model-container{
+	position: relative;
+	display: block;
+}
+.model-container h3{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	font-weight: 600;
+	letter-spacing: 3px;
+	word-spacing: 4px;
+	font-size: 26px;
+	transform: translate(-50%, -50%);
+}
+.close-btn{
+	position: absolute;
+	right: 20px;
+	top: 30px;
+}
+

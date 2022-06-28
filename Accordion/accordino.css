@@ -1,0 +1,39 @@
+.accordino{
+	width: 760px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.accordino-header{
+	display: flex;
+	justify-content: space-between;
+	outline: none;
+	width: 100%;
+	padding: 0.75rem 1rem;
+	background: green;
+	border: none;
+	border-bottom: 1px solid #54a0ff;
+	color: white;
+	font-family: Aeria;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	cursor: pointer;
+
+}
+.accordino-header.active{
+	background: #1070b1;
+}
+.accordino-header.active i{
+	transform: rotate(180deg);
+	transition: all .3s ease-in-out;
+}
+.accordino-body{
+	padding: 0 1rem;
+	background: #f3f3f3;
+	max-height: 0px;
+	overflow: hidden;
+	transition: all .3s ease-in-out;
+}
+.accordino-body.active{
+	max-height: 10rem;
+	padding: 1rem;
+}

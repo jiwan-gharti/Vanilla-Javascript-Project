@@ -1,0 +1,42 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	line-height: 1.5;
+	font-family: serif;
+	box-sizing: border-box;
+}
+
+.tab-container{
+	width: 779px;
+	margin: auto auto;
+}
+.tab-header{
+	display: flex;
+}
+.tab-header .btn{
+	width: 33.3%;
+	padding: 0.3rem;
+	border: none;
+	outline: none;
+	background: transparent;
+	font-size: 1.1rem;
+	border-bottom:  1px solid #ccc;
+}
+.btn.active{
+	border: none;
+	border: 1px solid #ccc;
+	border-bottom-color: white;
+	border-radius: 5px 5px 0 0;
+}
+.tab-body{
+	padding: 0.5rem;
+}
+.tab-content{
+	display: none;
+}
+.tab-content.active{
+	display: block;
+}

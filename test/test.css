@@ -1,0 +1,26 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	border: 1px red solid;
+	background: gray;
+}
+.container p{
+	float: left;
+}
+.container:hover  .img{
+	position: absolute;
+	left: 0;
+	transition: 1s all ease;
+}
+img{
+	float: right;
+}
+.container:after{
+	content: '';
+	clear: both;
+	display: table;
+}

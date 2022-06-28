@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <title>Hello, world!</title>
+
+    <style type="text/css">
+    	.card{
+    		height: 25rem;
+    		overflow: hidden;
+    		box-shadow: 10px 10px 10px 15px rgba(0, 0, 0, 0.5);
+    	}
+    	.card:hover > .card-body{
+    		position: absolute;
+    		bottom: 0;
+    		z-index: 1;
+    		transition: .5s all ease;
+
+    	}
+    	.card img{
+    		height: 100%;
+    		width: 100%;
+    	}
+    	.card:hover > img{
+    		transform: translateY(-10px) scale(1.1);
+    		transition: .5s all ease;
+    		border: 1px red solid;
+    	}
+    	.card-body{
+    		position: absolute;
+    		bottom: -9rem;
+    		width: 100%;
+    		z-index: -1;
+    		clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+    		box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.2);
+    	}
+    	.fas{
+    		color: gold;
+    	}
+    	.card-btn{
+    		background: white;
+    		line-height: 4rem;
+    	}
+    	.card-btn a:hover{
+    		background: gold;
+    	}
+    	.discount-card{
+    		background: gold;
+    		font-size: 1.2rem;
+    		padding: 0 0.5rem;
+    		font-weight: 600;
+    		font-family: Aeria;
+    		letter-spacing: 1px;
+    		border-radius: 0 0 5px 0;
+
+    	}
+    	
+    </style>
+  </head>
+  <body>
+    
+  	<div class="card m-5 shadow position-relative" style="width: 18rem;">
+		  <img src="mobile.jpg" class="card-img-top" alt="...">
+		  <div class="position-absolute top-0 right-0 discount-card">15% off</div>
+		  <div class="card-body bg-dark text-white">
+		    <h5 class="card-title">Card title</h5>
+		    <p class="card-text">Some quick</p>
+		    <div>
+                <i class="fas fa-star fa-xs"></i>
+                <i class="fas fa-star fa-xs"></i>
+                <i class="fas fa-star fa-xs"></i>
+                <i class="fas fa-star-half-alt fa-xs"></i>
+                <i class="far fa-star fa-xs"></i>
+            </div>
+		    <div class="d-flex justify-content-between mt-sm-3">
+		    	<div class="">
+		    		<p class="mb-0" style="font-size: 1.5rem; font-weight: 500; letter-spacing: 1px; color:gold;">$50</p>
+		    		<del class="mt-0" style="color: gray;">&nbsp $66 &nbsp</del>
+		    	</div>
+                <div class="card-btn d-flex justify-content-between" style="width: 8rem;">
+                	<a class="w-50 text-center" href=""><i class="far fa-heart fa-sm" style="font-size: 1.5rem;"></i></a>
+                	<a class="w-50 text-center"  href=""><i class="fa fa-shopping-cart fa-sm" style="font-size: 1.5rem;"></i></a>
+                </div>
+            </div>
+		  </div>
+	</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+    <script src="https://kit.fontawesome.com/a6cdb94b02.js" crossorigin="anonymous"></script>
+  </body>
+</html>
